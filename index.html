@@ -72,6 +72,23 @@
         grid-template-columns: 1fr;
       }
     }
+
+    .portfolio-img {
+      position: relative;
+      overflow: hidden;
+      padding-top: 75%; /* Adjust this percentage to change the aspect ratio */
+      border-radius: 10px;
+      border: 2px solid #0763bb;
+    }
+
+    .portfolio-img img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   </style>
 
   <!-- =======================================================
@@ -418,65 +435,88 @@
             <li data-filter=".filter-product">Data Analyst Project</li>
             <li data-filter=".filter-branding">Computer Vision</li>
           </ul><!-- End Portfolio Filters -->
-
+        
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
+        
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/dataScientist/debatCapres.png" class="img-fluid" alt="" style="border-radius: 10px; border: 2px solid #0763bb;">
+              <div class="portfolio-img">
+                <img src="assets/img/dataScientist/debatCapres.png" alt="">
+              </div>
               <div class="portfolio-info">
                 <h4>Natural Language Processing</h4>
                 <p>Analisis Sentimen Debat Capres 2024</p>
                 <a href="https://medium.com/@adheaulia/analisis-sentimen-debat-capres-2024-naive-bayes-classifier-90061bbb0949" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
-
+        
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-img">
+                <img src="assets/img/dataScientist/tumorOtak.png" alt="">
+              </div>
+              <div class="portfolio-info">
+                <h4>Deep Learning (CNN)</h4>
+                <p>Prediksi Tumor Otak Menggunakan Convolutional Neural Network (CNN)</p>
+                <a href="https://medium.com/@adheaulia/analisis-sentimen-debat-capres-2024-naive-bayes-classifier-90061bbb0949" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+        
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/dataAnalyst/dashboardRumahSakit.png" class="img-fluid" alt="" style="border-radius: 10px; border: 2px solid #0763bb;">
+              <div class="portfolio-img">
+                <img src="assets/img/dataAnalyst/dashboardRumahSakit.png" alt="">
+              </div>
               <div class="portfolio-info">
                 <h4>Dashboard Visualization</h4>
                 <p>Hospital Dashboard with Looker Studio</p>
                 <a href="https://lookerstudio.google.com/reporting/11a29dfd-024a-4eef-bccc-1ac121ca7bb1" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
-
+        
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/computerVision/platKendaraan.png" class="img-fluid" alt="" style="border-radius: 10px; border: 2px solid #0763bb;">
+              <div class="portfolio-img">
+                <img src="assets/img/computerVision/platKendaraan.png" alt="">
+              </div>
               <div class="portfolio-info">
                 <h4>Object Detection</h4>
                 <p>Vehicle plate detection using CNN</p>
                 <a href="https://medium.com/@adheaulia/deteksi-klasifikasi-plat-kendaraan-menggunakan-convolutional-neural-network-cnn-a203198f6e86" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
-
+        
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/dataAnalyst/dashboardBNISekuritas.png" class="img-fluid" alt="" style="border-radius: 10px; border: 2px solid #0763bb;">
+              <div class="portfolio-img">
+                <img src="assets/img/dataAnalyst/dashboardBNISekuritas.png" alt="">
+              </div>
               <div class="portfolio-info">
                 <h4>Dashboard Visualization</h4>
                 <p>Dashboard Stock Volume Spike BNI Sekuritas</p>
                 <a href="https://lookerstudio.google.com/reporting/a8592bed-8656-4c29-aaa8-479044ff7372" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
-
+        
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/computerVision/soundDegla.png" class="img-fluid" alt="" style="border-radius: 10px; border: 2px solid #0763bb;">
-              <div class="portfolio-info">
-                  <h4>Object Detection</h4>
-                  <p>Kacamata Pintar Penyandang Tunarungu Berbasis AI (PKM-KC)</p>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <div class="portfolio-img">
+                <img src="assets/img/computerVision/soundDegla.png" alt="">
               </div>
-          </div><!-- End Portfolio Item -->
-
+              <div class="portfolio-info">
+                <h4>Object Detection</h4>
+                <p>Kacamata Pintar Penyandang Tunarungu Berbasis AI (PKM-KC)</p>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+        
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="" style="border-radius: 10px; border: 2px solid #0763bb;">
+              <div class="portfolio-img">
+                <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" alt="">
+              </div>
               <div class="portfolio-info">
                 <h4>Exploratory Data Analysis</h4>
                 <p>Adidas Product Sale</p>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
-
+        
           </div><!-- End Portfolio Container -->
-
+        
         </div>
 
       </div>
